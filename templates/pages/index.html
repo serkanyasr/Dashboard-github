@@ -1,0 +1,90 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link
+      rel="shortcut icon"
+      href="{% static 'favicon.ico' %}"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="cardBox">
+      <div class="card">
+        <div>
+          <ion-icon class="iconBox" name="folder-open"></ion-icon>
+          <div class="cardName">CARD BOX</div>
+          <div class="numbers">CARD BOX VALUES</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <ion-icon class="iconBox" name="funnel"></ion-icon>
+          <div class="cardName">CARD BOX</div>
+          <div class="numbers">CARD BOX VALUES</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <ion-icon class="iconBox" name="tv"></ion-icon>
+          <div class="cardName">CARD BOX</div>
+          <div class="numbers">CARD BOX VALUES</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <ion-icon class="iconBox" name="speedometer"></ion-icon>
+          <div class="cardName">CARD BOX</div>
+          <div class="numbers">CARD BOX VALUES</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="graphBox">
+      <div class="box">
+        <h5 class="cardName">POLAR AREA CHART</h5>
+        <div id="figure1" style="padding-top: 40px"></div>
+      </div>
+      <div class="box">
+        <h5 class="cardName">STACKED COLUMN BAR CHART</h5>
+        <div id="figure2" class=""></div>
+      </div>
+      <div class="box">
+        <h5 class="cardName">SIMPLE DONUT CHART</h5>
+        <div id="figure3" style="padding-top: 40px"></div>
+      </div>
+    </div>
+
+    <div class="graphBox" style="grid-template-columns: 1fr 1fr;">
+      <div class="box">
+        <h5 class="cardName">SPLINE AREA CHART</h5>
+        <div id="figure4" class=""></div>
+      </div>
+      <div class="box">
+        <h5 class="cardName">BASIC AREA CHART</h5>
+        <div id="figure5" class=""></div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

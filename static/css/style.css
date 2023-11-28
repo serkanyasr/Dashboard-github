@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ubuntu", sans-serif;
+}
+:root {
+  --white: #fff;  
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow: hidden;
+  background: #302c2c;
+}
+
+.cardBox {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.cardBox .card {
+  position: relative;
+  background: var(--white);
+  padding: 10px;
+  border-radius: 30px;
+  justify-content: space-between;
+  cursor: pointer;
+  background: #6a6869;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cardBox .card .cardName {
+  text-align: center;
+  color: #6ecfd5;
+  font-size: 1.2em;
+}
+.cardBox .card .numbers {
+  position: relative;
+  text-align: center;
+  font-weight: 250;
+  font-size: 1.8em;
+  margin-top: 10px;
+  color: var(--white);
+}
+.cardBox .card .iconBox {
+    color: var(--white);
+    font-size: 3.2em;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.cardBox .card:hover {
+  background: #120a8f;
+}
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName {
+  color: var(--white);
+}
+
+
+.graphBox {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 30px;
+  min-height: 200px;
+}
+.graphBox .box {
+  position: relative;
+  background: #fff;
+  padding: 0px;
+  width: 100%;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  background: #6a6869;
+}
+.graphBox .box .cardName {
+  text-align: center;
+  color: #6ecfd5;
+  font-size: 1.2em;
+  margin-top: 5px;
+}
