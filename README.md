@@ -2,7 +2,7 @@
 
 This guide provides step-by-step instructions to successfully deploy your Django application on Azure Cloud.
 
-[Read on Medium](https://medium.com/your-username/django-azure-deployment-guide)
+[Read on Medium](https://medium.com/@serkanyasr/django-uygulaman%C4%B1z%C4%B1-azure-sanal-makine-%C3%BCzerinde-da%C4%9F%C4%B1t%C4%B1n-c6cce42a56d1)
 
 ## Handling Static Files
 
